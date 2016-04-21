@@ -1,0 +1,6 @@
+#Write Concern Principles
+ - write is truly committed upon app @ a majority of set.
+ - we can get acknowlegment
+
+ - db.getLastError({w:'majority',wtimeout : 8000})
+ - 

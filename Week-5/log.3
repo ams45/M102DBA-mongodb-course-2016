@@ -1,0 +1,312 @@
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] MongoDB starting : pid=9164 port=27003 dbpath=/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3 64-bit host=mahasagar-medibox
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] db version v3.2.4
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] git version: e2ee9ffcf9f5a94fad76802e28cc978718bb7a30
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] modules: none
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] build environment:
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2016-04-13T11:48:00.377+0530 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "abc" }, storage: { dbPath: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/log.3" } }
+2016-04-13T11:48:00.399+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2016-04-13T11:48:00.946+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2016-04-13T11:48:00.946+0530 I CONTROL  [initandlisten] 
+2016-04-13T11:48:00.946+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-13T11:48:00.946+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-13T11:48:00.946+0530 I CONTROL  [initandlisten] 
+2016-04-13T11:48:00.946+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-13T11:48:00.946+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-13T11:48:00.946+0530 I CONTROL  [initandlisten] 
+2016-04-13T11:48:01.103+0530 I REPL     [initandlisten] Did not find local voted for document at startup;  NoMatchingDocument: Did not find replica set lastVote document in local.replset.election
+2016-04-13T11:48:01.103+0530 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2016-04-13T11:48:01.103+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3/diagnostic.data'
+2016-04-13T11:48:01.104+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-04-13T11:48:01.264+0530 I NETWORK  [initandlisten] waiting for connections on port 27003
+2016-04-13T14:28:20.818+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:43780 #1 (1 connection now open)
+2016-04-13T14:28:20.819+0530 I NETWORK  [conn1] end connection 127.0.0.1:43780 (0 connections now open)
+2016-04-13T14:28:20.819+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:43782 #2 (1 connection now open)
+2016-04-13T14:28:20.821+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27001
+2016-04-13T14:28:22.824+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:43789 #3 (2 connections now open)
+2016-04-13T14:28:22.825+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:43790 #4 (3 connections now open)
+2016-04-13T14:28:22.825+0530 I NETWORK  [conn3] end connection 127.0.0.1:43789 (1 connection now open)
+2016-04-13T14:28:22.825+0530 I NETWORK  [conn4] end connection 127.0.0.1:43790 (1 connection now open)
+2016-04-13T14:28:23.029+0530 I REPL     [replExecDBWorker-0] Starting replication applier threads
+2016-04-13T14:28:23.030+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-13T14:28:23.030+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-13T14:28:23.030+0530 I REPL     [ReplicationExecutor] transition to STARTUP2
+2016-04-13T14:28:23.030+0530 I REPL     [rsSync] ******
+2016-04-13T14:28:23.030+0530 I REPL     [rsSync] creating replication oplog of size: 50MB...
+2016-04-13T14:28:23.031+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:43792 #5 (2 connections now open)
+2016-04-13T14:28:23.031+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27001 is now in state SECONDARY
+2016-04-13T14:28:23.031+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27002
+2016-04-13T14:28:23.032+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27002 is now in state STARTUP2
+2016-04-13T14:28:23.168+0530 I STORAGE  [rsSync] Starting WiredTigerRecordStoreThread local.oplog.rs
+2016-04-13T14:28:23.168+0530 I STORAGE  [rsSync] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2016-04-13T14:28:23.168+0530 I STORAGE  [rsSync] Scanning the oplog to determine where to place markers for truncation
+2016-04-13T14:28:23.539+0530 I REPL     [rsSync] ******
+2016-04-13T14:28:23.540+0530 I REPL     [rsSync] initial sync pending
+2016-04-13T14:28:23.706+0530 I REPL     [ReplicationExecutor] syncing from: mahasagar-medibox:27001
+2016-04-13T14:28:23.713+0530 I REPL     [rsSync] initial sync drop all databases
+2016-04-13T14:28:23.713+0530 I STORAGE  [rsSync] dropAllDatabasesExceptLocal 1
+2016-04-13T14:28:23.713+0530 I REPL     [rsSync] initial sync clone all databases
+2016-04-13T14:28:23.713+0530 I REPL     [rsSync] initial sync data copy, starting syncup
+2016-04-13T14:28:23.713+0530 I REPL     [rsSync] oplog sync 1 of 3
+2016-04-13T14:28:23.714+0530 I REPL     [rsSync] oplog sync 2 of 3
+2016-04-13T14:28:23.714+0530 I REPL     [rsSync] initial sync building indexes
+2016-04-13T14:28:23.714+0530 I REPL     [rsSync] oplog sync 3 of 3
+2016-04-13T14:28:23.715+0530 I REPL     [rsSync] initial sync finishing up
+2016-04-13T14:28:23.715+0530 I REPL     [rsSync] set minValid=(term: -1, timestamp: Apr 13 14:28:21:1)
+2016-04-13T14:28:23.721+0530 I REPL     [rsSync] initial sync done
+2016-04-13T14:28:23.723+0530 I REPL     [ReplicationExecutor] transition to RECOVERING
+2016-04-13T14:28:23.724+0530 I REPL     [ReplicationExecutor] transition to SECONDARY
+2016-04-13T14:28:24.030+0530 I REPL     [ReplicationExecutor] could not find member to sync from
+2016-04-13T14:28:29.031+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27002 is now in state SECONDARY
+2016-04-13T14:28:32.176+0530 I COMMAND  [conn2] command local.replset.election command: replSetRequestVotes { replSetRequestVotes: 1, setName: "abc", dryRun: true, term: 0, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp 1460537901000|1, t: -1 } } keyUpdates:0 writeConflicts:0 numYields:0 reslen:63 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { W: 2 } } } protocol:op_command 299ms
+2016-04-13T14:28:34.032+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27001 is now in state PRIMARY
+2016-04-13T14:28:35.032+0530 I REPL     [ReplicationExecutor] syncing from: mahasagar-medibox:27001
+2016-04-13T14:28:35.034+0530 I REPL     [SyncSourceFeedback] setting syncSourceFeedback to mahasagar-medibox:27001
+2016-04-13T14:28:35.035+0530 I ASIO     [NetworkInterfaceASIO-BGSync-0] Successfully connected to mahasagar-medibox:27001
+2016-04-13T14:28:57.470+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:41973 #6 (3 connections now open)
+2016-04-18T10:11:33.281+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] MongoDB starting : pid=29747 port=27003 dbpath=/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3 64-bit host=mahasagar-medibox
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] db version v3.2.4
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] git version: e2ee9ffcf9f5a94fad76802e28cc978718bb7a30
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] modules: none
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] build environment:
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2016-04-18T10:11:33.292+0530 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "abc" }, storage: { dbPath: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/log.3" } }
+2016-04-18T10:11:33.385+0530 I -        [initandlisten] Detected data files in /home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2016-04-18T10:11:33.385+0530 W -        [initandlisten] Detected unclean shutdown - /home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3/mongod.lock is not empty.
+2016-04-18T10:11:33.385+0530 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2016-04-18T10:11:33.385+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2016-04-18T10:11:34.347+0530 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2016-04-18T10:11:34.347+0530 I STORAGE  [initandlisten] The size storer reports that the oplog contains 2 records totaling to 180 bytes
+2016-04-18T10:11:34.347+0530 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2016-04-18T10:11:34.456+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2016-04-18T10:11:34.456+0530 I CONTROL  [initandlisten] 
+2016-04-18T10:11:34.456+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-18T10:11:34.456+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-18T10:11:34.456+0530 I CONTROL  [initandlisten] 
+2016-04-18T10:11:34.456+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-18T10:11:34.456+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-18T10:11:34.457+0530 I CONTROL  [initandlisten] 
+2016-04-18T10:11:34.459+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3/diagnostic.data'
+2016-04-18T10:11:34.459+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-04-18T10:11:34.461+0530 I NETWORK  [initandlisten] waiting for connections on port 27003
+2016-04-18T10:11:34.463+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57690 #1 (1 connection now open)
+2016-04-18T10:11:34.464+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T10:11:34.464+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T10:11:34.464+0530 I REPL     [ReplicationExecutor] transition to STARTUP2
+2016-04-18T10:11:34.464+0530 I NETWORK  [conn1] end connection 127.0.0.1:57690 (0 connections now open)
+2016-04-18T10:11:34.464+0530 I REPL     [ReplicationExecutor] Starting replication applier threads
+2016-04-18T10:11:34.464+0530 I REPL     [ReplicationExecutor] transition to RECOVERING
+2016-04-18T10:11:34.465+0530 I REPL     [ReplicationExecutor] transition to SECONDARY
+2016-04-18T10:11:34.465+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27002
+2016-04-18T10:11:34.466+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27001
+2016-04-18T10:11:34.466+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27002 is now in state SECONDARY
+2016-04-18T10:11:34.466+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27001 is now in state PRIMARY
+2016-04-18T10:11:34.664+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57693 #2 (1 connection now open)
+2016-04-18T10:11:35.070+0530 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2016-04-18T10:11:39.007+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57694 #3 (2 connections now open)
+2016-04-18T10:11:40.466+0530 I REPL     [ReplicationExecutor] syncing from: mahasagar-medibox:27001
+2016-04-18T10:11:40.468+0530 I REPL     [SyncSourceFeedback] setting syncSourceFeedback to mahasagar-medibox:27001
+2016-04-18T10:11:40.469+0530 I ASIO     [NetworkInterfaceASIO-BGSync-0] Successfully connected to mahasagar-medibox:27001
+2016-04-18T12:13:37.560+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58723 #4 (3 connections now open)
+2016-04-18T12:13:37.560+0530 I NETWORK  [conn4] end connection 127.0.0.1:58723 (2 connections now open)
+2016-04-18T12:13:37.563+0530 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update, response: { configVersion: 2, ok: 0.0, errmsg: "Received replSetUpdatePosition for node with memberId 1 whose config version of 1 doesn't match our config version of 2", code: 93 }
+2016-04-18T12:13:37.563+0530 I REPL     [SyncSourceFeedback] updateUpstream failed: InvalidReplicaSetConfig: Received replSetUpdatePosition for node with memberId 1 whose config version of 1 doesn't match our config version of 2, will retry
+2016-04-18T12:13:37.566+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58729 #5 (3 connections now open)
+2016-04-18T12:13:37.566+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58730 #6 (4 connections now open)
+2016-04-18T12:13:37.567+0530 I NETWORK  [conn5] end connection 127.0.0.1:58729 (3 connections now open)
+2016-04-18T12:13:37.567+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 0.0, tags: {}, slaveDelay: 120, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T12:13:37.567+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T12:13:37.568+0530 I NETWORK  [conn6] end connection 127.0.0.1:58730 (2 connections now open)
+2016-04-18T12:16:08.200+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58740 #7 (3 connections now open)
+2016-04-18T12:16:08.200+0530 I NETWORK  [conn7] end connection 127.0.0.1:58740 (2 connections now open)
+2016-04-18T12:16:08.203+0530 W REPL     [rsSync] slavedelay causing a long sleep of 120 seconds
+2016-04-18T12:16:08.206+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58745 #8 (3 connections now open)
+2016-04-18T12:16:08.206+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58746 #9 (4 connections now open)
+2016-04-18T12:16:08.206+0530 I NETWORK  [conn8] end connection 127.0.0.1:58745 (3 connections now open)
+2016-04-18T12:16:08.207+0530 I NETWORK  [conn9] end connection 127.0.0.1:58746 (2 connections now open)
+2016-04-18T12:16:08.207+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 3, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T12:16:08.207+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T12:19:10.199+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58760 #10 (3 connections now open)
+2016-04-18T12:19:10.200+0530 I NETWORK  [conn10] end connection 127.0.0.1:58760 (2 connections now open)
+2016-04-18T12:19:10.204+0530 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update, response: { configVersion: 4, ok: 0.0, errmsg: "Received replSetUpdatePosition for node with memberId 1 whose config version of 3 doesn't match our config version of 4", code: 93 }
+2016-04-18T12:19:10.204+0530 I REPL     [SyncSourceFeedback] updateUpstream failed: InvalidReplicaSetConfig: Received replSetUpdatePosition for node with memberId 1 whose config version of 3 doesn't match our config version of 4, will retry
+2016-04-18T12:19:10.205+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58765 #11 (3 connections now open)
+2016-04-18T12:19:10.205+0530 I NETWORK  [conn11] end connection 127.0.0.1:58765 (2 connections now open)
+2016-04-18T12:19:10.205+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 4, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 0.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T12:19:10.205+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T12:19:10.206+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58767 #12 (3 connections now open)
+2016-04-18T12:19:10.207+0530 I NETWORK  [conn12] end connection 127.0.0.1:58767 (2 connections now open)
+2016-04-18T12:24:31.917+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58814 #13 (3 connections now open)
+2016-04-18T12:24:31.917+0530 I NETWORK  [conn13] end connection 127.0.0.1:58814 (2 connections now open)
+2016-04-18T12:24:31.918+0530 I NETWORK  [conn2] end connection 127.0.0.1:57693 (1 connection now open)
+2016-04-18T12:24:31.919+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58815 #14 (2 connections now open)
+2016-04-18T12:24:31.920+0530 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update, response: { configVersion: 5, ok: 0.0, errmsg: "Received replSetUpdatePosition for node with memberId 1 whose config version of 4 doesn't match our config version of 5", code: 93 }
+2016-04-18T12:24:31.920+0530 I REPL     [SyncSourceFeedback] updateUpstream failed: InvalidReplicaSetConfig: Received replSetUpdatePosition for node with memberId 1 whose config version of 4 doesn't match our config version of 5, will retry
+2016-04-18T12:24:31.924+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58821 #15 (3 connections now open)
+2016-04-18T12:24:31.924+0530 I NETWORK  [conn15] end connection 127.0.0.1:58821 (2 connections now open)
+2016-04-18T12:24:31.925+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 5, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: true, priority: 0.0, tags: {}, slaveDelay: 28800, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T12:24:31.925+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58822 #16 (3 connections now open)
+2016-04-18T12:24:31.925+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T12:24:31.925+0530 I NETWORK  [conn16] end connection 127.0.0.1:58822 (2 connections now open)
+2016-04-18T12:31:37.886+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] MongoDB starting : pid=32646 port=27003 dbpath=/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3 64-bit host=mahasagar-medibox
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] db version v3.2.4
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] git version: e2ee9ffcf9f5a94fad76802e28cc978718bb7a30
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] modules: none
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] build environment:
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2016-04-18T12:31:37.894+0530 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "abc" }, storage: { dbPath: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/log.3" } }
+2016-04-18T12:31:37.916+0530 I -        [initandlisten] Detected data files in /home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2016-04-18T12:31:37.916+0530 W -        [initandlisten] Detected unclean shutdown - /home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3/mongod.lock is not empty.
+2016-04-18T12:31:37.916+0530 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2016-04-18T12:31:37.916+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2016-04-18T12:31:38.791+0530 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2016-04-18T12:31:38.791+0530 I STORAGE  [initandlisten] The size storer reports that the oplog contains 7 records totaling to 710 bytes
+2016-04-18T12:31:38.791+0530 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2016-04-18T12:31:38.842+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2016-04-18T12:31:38.843+0530 I CONTROL  [initandlisten] 
+2016-04-18T12:31:38.843+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-18T12:31:38.843+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-18T12:31:38.843+0530 I CONTROL  [initandlisten] 
+2016-04-18T12:31:38.843+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-18T12:31:38.843+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-18T12:31:38.843+0530 I CONTROL  [initandlisten] 
+2016-04-18T12:31:38.845+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3/diagnostic.data'
+2016-04-18T12:31:38.845+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-04-18T12:31:38.846+0530 I NETWORK  [initandlisten] waiting for connections on port 27003
+2016-04-18T12:31:38.847+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59857 #1 (1 connection now open)
+2016-04-18T12:31:38.848+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 5, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: true, priority: 0.0, tags: {}, slaveDelay: 28800, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T12:31:38.848+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T12:31:38.848+0530 I NETWORK  [conn1] end connection 127.0.0.1:59857 (0 connections now open)
+2016-04-18T12:31:38.848+0530 I REPL     [ReplicationExecutor] transition to STARTUP2
+2016-04-18T12:31:38.848+0530 I REPL     [ReplicationExecutor] Starting replication applier threads
+2016-04-18T12:31:38.848+0530 I REPL     [ReplicationExecutor] transition to RECOVERING
+2016-04-18T12:31:38.849+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27001
+2016-04-18T12:31:38.849+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27001 is now in state PRIMARY
+2016-04-18T12:31:38.850+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27002
+2016-04-18T12:31:38.850+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27002 is now in state SECONDARY
+2016-04-18T12:31:38.851+0530 I REPL     [ReplicationExecutor] transition to SECONDARY
+2016-04-18T12:31:39.013+0530 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2016-04-18T12:31:40.244+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59860 #2 (1 connection now open)
+2016-04-18T12:31:40.245+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59861 #3 (2 connections now open)
+2016-04-18T12:37:08.954+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49269 #4 (3 connections now open)
+2016-04-18T12:39:58.985+0530 I REPL     [ReplicationExecutor] syncing from: mahasagar-medibox:27002
+2016-04-18T12:39:58.987+0530 I REPL     [SyncSourceFeedback] setting syncSourceFeedback to mahasagar-medibox:27002
+2016-04-18T12:39:58.988+0530 I ASIO     [NetworkInterfaceASIO-BGSync-0] Successfully connected to mahasagar-medibox:27002
+2016-04-18T12:39:58.989+0530 W REPL     [rsSync] slavedelay causing a long sleep of 28797 seconds
+2016-04-18T14:13:13.464+0530 I NETWORK  [conn4] end connection 127.0.0.1:49269 (2 connections now open)
+2016-04-18T21:51:32.595+0530 I ASIO     [NetworkInterfaceASIO-BGSync-0] Successfully connected to mahasagar-medibox:27002
+2016-04-18T23:13:53.311+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2016-04-18T23:13:53.311+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2016-04-18T23:13:53.314+0530 I ASIO     [rsBackgroundSync-0] dropping unhealthy pooled connection to mahasagar-medibox:27002
+2016-04-18T23:13:53.314+0530 W EXECUTOR [rsBackgroundSync] killCursors command task failed: CallbackCanceled: Callback canceled
+2016-04-18T23:13:53.319+0530 I REPL     [signalProcessingThread] Stopping replication applier threads
+2016-04-18T23:13:54.702+0530 I CONTROL  [signalProcessingThread] now exiting
+2016-04-18T23:13:54.702+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2016-04-18T23:13:54.703+0530 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2016-04-18T23:13:54.703+0530 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2016-04-18T23:13:54.703+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27003.sock
+2016-04-18T23:13:54.703+0530 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2016-04-18T23:13:54.703+0530 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2016-04-18T23:13:54.704+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2016-04-18T23:13:54.704+0530 I NETWORK  [conn2] end connection 127.0.0.1:59860 (1 connection now open)
+2016-04-18T23:13:54.704+0530 I NETWORK  [conn3] end connection 127.0.0.1:59861 (0 connections now open)
+2016-04-18T23:13:55.393+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2016-04-18T23:13:55.395+0530 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
+2016-04-18T23:15:48.411+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] MongoDB starting : pid=12830 port=27003 dbpath=/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3 64-bit host=mahasagar-medibox
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] db version v3.2.4
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] git version: e2ee9ffcf9f5a94fad76802e28cc978718bb7a30
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] modules: none
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] build environment:
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2016-04-18T23:15:48.424+0530 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "abc" }, storage: { dbPath: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/log.3" } }
+2016-04-18T23:15:48.444+0530 I -        [initandlisten] Detected data files in /home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2016-04-18T23:15:48.445+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2016-04-18T23:15:49.481+0530 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2016-04-18T23:15:49.481+0530 I STORAGE  [initandlisten] The size storer reports that the oplog contains 17 records totaling to 1838 bytes
+2016-04-18T23:15:49.481+0530 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2016-04-18T23:15:49.529+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2016-04-18T23:15:49.529+0530 I CONTROL  [initandlisten] 
+2016-04-18T23:15:49.529+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-04-18T23:15:49.529+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-18T23:15:49.529+0530 I CONTROL  [initandlisten] 
+2016-04-18T23:15:49.529+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-04-18T23:15:49.529+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-04-18T23:15:49.529+0530 I CONTROL  [initandlisten] 
+2016-04-18T23:15:49.532+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/mahasagar/work/mongo_course/M102DBA-mongodb-course-2016/Week-5/3/diagnostic.data'
+2016-04-18T23:15:49.532+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-04-18T23:15:49.549+0530 I NETWORK  [initandlisten] waiting for connections on port 27003
+2016-04-18T23:15:49.551+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:34951 #1 (1 connection now open)
+2016-04-18T23:15:49.551+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 5, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: false, buildIndexes: true, hidden: true, priority: 0.0, tags: {}, slaveDelay: 28800, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T23:15:49.551+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T23:15:49.551+0530 I REPL     [ReplicationExecutor] transition to STARTUP2
+2016-04-18T23:15:49.551+0530 I NETWORK  [conn1] end connection 127.0.0.1:34951 (0 connections now open)
+2016-04-18T23:15:49.551+0530 I REPL     [ReplicationExecutor] Starting replication applier threads
+2016-04-18T23:15:49.551+0530 I REPL     [ReplicationExecutor] transition to RECOVERING
+2016-04-18T23:15:49.552+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27002
+2016-04-18T23:15:49.552+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27002 is now in state SECONDARY
+2016-04-18T23:15:49.553+0530 I REPL     [ReplicationExecutor] transition to SECONDARY
+2016-04-18T23:15:49.553+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to mahasagar-medibox:27001
+2016-04-18T23:15:49.553+0530 I REPL     [ReplicationExecutor] Member mahasagar-medibox:27001 is now in state PRIMARY
+2016-04-18T23:15:49.632+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:34954 #2 (1 connection now open)
+2016-04-18T23:15:53.338+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:34955 #3 (2 connections now open)
+2016-04-18T23:15:54.554+0530 I REPL     [ReplicationExecutor] syncing from: mahasagar-medibox:27002
+2016-04-18T23:15:54.555+0530 I REPL     [SyncSourceFeedback] setting syncSourceFeedback to mahasagar-medibox:27002
+2016-04-18T23:15:54.555+0530 I ASIO     [NetworkInterfaceASIO-BGSync-0] Successfully connected to mahasagar-medibox:27002
+2016-04-18T23:15:54.556+0530 W REPL     [rsSync] slavedelay causing a long sleep of 28794 seconds
+2016-04-18T23:36:38.603+0530 I ASIO     [NetworkInterfaceASIO-BGSync-0] Successfully connected to mahasagar-medibox:27002
+2016-04-18T23:36:39.646+0530 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update, response: { configVersion: 6, ok: 0.0, errmsg: "Received replSetUpdatePosition for node with memberId 2 whose config version of 5 doesn't match our config version of 6", code: 93 }
+2016-04-18T23:36:39.646+0530 I REPL     [SyncSourceFeedback] updateUpstream failed: InvalidReplicaSetConfig: Received replSetUpdatePosition for node with memberId 2 whose config version of 5 doesn't match our config version of 6, will retry
+2016-04-18T23:36:39.852+0530 I REPL     [ReplicationExecutor] Cannot find self in new replica set configuration; I must be removed; NodeNotFound: No host described in new configuration 6 for replica set abc maps to this node
+2016-04-18T23:36:39.852+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 6, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T23:36:39.852+0530 I REPL     [ReplicationExecutor] This node is not a member of the config
+2016-04-18T23:36:39.852+0530 I REPL     [ReplicationExecutor] transition to REMOVED
+2016-04-18T23:36:39.852+0530 I NETWORK  [conn3] end connection 127.0.0.1:34955 (1 connection now open)
+2016-04-18T23:36:39.852+0530 I NETWORK  [conn2] end connection 127.0.0.1:34954 (0 connections now open)
+2016-04-18T23:37:06.058+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:35168 #4 (1 connection now open)
+2016-04-18T23:37:06.058+0530 I NETWORK  [conn4] end connection 127.0.0.1:35168 (0 connections now open)
+2016-04-18T23:37:06.058+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:35169 #5 (1 connection now open)
+2016-04-18T23:37:06.063+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:35173 #6 (2 connections now open)
+2016-04-18T23:37:06.064+0530 I NETWORK  [conn6] end connection 127.0.0.1:35173 (1 connection now open)
+2016-04-18T23:37:06.064+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "abc", version: 7, protocolVersion: 1, members: [ { _id: 0, host: "mahasagar-medibox:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mahasagar-medibox:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mahasagar-medibox:27003", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('570e0a2c95def9280b3c032c') } }
+2016-04-18T23:37:06.064+0530 I REPL     [ReplicationExecutor] This node is mahasagar-medibox:27003 in the config
+2016-04-18T23:37:06.064+0530 I REPL     [ReplicationExecutor] transition to ARBITER
+2016-04-18T23:37:06.064+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:35175 #7 (2 connections now open)
+2016-04-18T23:37:06.065+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:35176 #8 (3 connections now open)
+2016-04-18T23:37:06.065+0530 I NETWORK  [conn7] end connection 127.0.0.1:35175 (2 connections now open)
+2016-04-18T23:37:06.066+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:35177 #9 (3 connections now open)
+2016-04-18T23:37:06.183+0530 I REPL     [ReplicationExecutor] could not find member to sync from
+2016-04-19T00:17:04.496+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2016-04-19T00:17:04.496+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2016-04-19T00:17:04.507+0530 I REPL     [signalProcessingThread] Stopping replication applier threads
+2016-04-19T00:17:06.049+0530 I NETWORK  [conn5] end connection 127.0.0.1:35169 (2 connections now open)
+2016-04-19T00:17:06.267+0530 I CONTROL  [signalProcessingThread] now exiting
+2016-04-19T00:17:06.267+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2016-04-19T00:17:06.267+0530 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2016-04-19T00:17:06.267+0530 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2016-04-19T00:17:06.267+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27003.sock
+2016-04-19T00:17:06.267+0530 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2016-04-19T00:17:06.267+0530 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2016-04-19T00:17:06.267+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2016-04-19T00:17:06.267+0530 I NETWORK  [conn8] end connection 127.0.0.1:35176 (1 connection now open)
+2016-04-19T00:17:06.267+0530 I NETWORK  [conn9] end connection 127.0.0.1:35177 (1 connection now open)
+2016-04-19T00:17:06.694+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2016-04-19T00:17:06.694+0530 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
