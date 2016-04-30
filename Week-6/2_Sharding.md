@@ -18,3 +18,9 @@
     - so.. db.user.find({name : "Dinchak"}); 
          - will go to S2 for finding the data..
 
+Quiz: Sharding & Data Distribution
+
+A field that has the boolean of value of either true or false would make for a good shard key:
+
+True
+*False
